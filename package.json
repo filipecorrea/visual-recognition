@@ -1,0 +1,42 @@
+{
+  "name": "visual-recognition",
+  "version": "1.0.0",
+  "description": "React user interface for IBM's visual recognition API",
+  "author": "Filipe Corrêa <filipecorrea@me.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipecorrea/visual-recognition.git"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "standard --fix",
+    "pretest": "standard",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1"
+  },
+  "devDependencies": {
+    "carbon-components": "^9.61.1",
+    "carbon-components-react": "^6.60.1",
+    "node-sass": "^4.11.0",
+    "standard": "^12.0.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  },
+  "proxy": "https://gateway.watsonplatform.net/visual-recognition/api/v3/"
+}
