@@ -1,6 +1,8 @@
 # Visual Recognition
 
-React user interface for IBM's visual recognition API.
+React interface for IBM's visual recognition API.
+
+![](screenshots.gif)
 
 ## Prerequisites
 

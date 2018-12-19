@@ -1,7 +1,7 @@
 {
   "name": "visual-recognition",
   "version": "1.0.0",
-  "description": "React user interface for IBM's visual recognition API",
+  "description": "React interface for IBM's visual recognition API",
   "author": "Filipe Corrêa <filipecorrea@me.com>",
   "license": "MIT",
   "repository": {
