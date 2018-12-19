@@ -6,6 +6,12 @@ React user interface for IBM's visual recognition API.
 
 - [Node.js](https://nodejs.org)
 
+## Setup
+
+Create a [Visual Recognition](https://console.bluemix.net/catalog/services/visual-recognition) service in [IBM Cloud](https://cloud.ibm.com).
+
+Add the Visual Recognition API key to this project's `.env` file.
+
 ## Run
 
 In the project directory, you can run:
