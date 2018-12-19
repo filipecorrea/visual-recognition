@@ -18,21 +18,17 @@
     }
   }
 
-  img.display {
-    margin: 0 0 $layout-sm;
+  img {
     width: 100%;
+    margin: 0 0 $layout-sm;
   }
 
-  .result {
+  .bx--structured-list {
     min-width: 0;
 
     .bx--structured-list-row .bx--structured-list-td:last-child {
       padding-right: 0;
       text-align: right;
-    }
-
-    .bx--structured-list-row .bx--structured-list-td.highlight {
-      color: $brand-03;
     }
   }
 }

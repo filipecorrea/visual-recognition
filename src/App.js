@@ -29,17 +29,17 @@ class App extends Component {
         <header>
           <h1>Visual Recognition</h1>
         </header>
-        <Form onSubmit={(e) => this.submit(e)}>
+        <Form onSubmit={event => this.submit(event)}>
           <section className='bx--row'>
             <div className='bx--col-xl-8'>
               <TextInput id='image' type='url' required labelText='Image' placeholder='Image URL' />
             </div>
             <div className='bx--col-xs-6 bx--col-xl-3'>
-              <Select id='model' labelText='Model' defaultValue='1'>
-                <SelectItem value='default' text='Default' />
+              <Select id='model' labelText='Model' defaultValue='default'>
+                <SelectItem value='default' text='General' />
                 {
-                  this.state.classifiers.map(classifier => (
-                    <SelectItem key={classifier.classifier_id} value={classifier.classifier_id} text={classifier.name} />
+                  this.state.classifiers.map(c => (
+                    <SelectItem key={c.classifier_id} value={c.classifier_id} text={c.name} />
                   ))
                 }
               </Select>
@@ -53,18 +53,18 @@ class App extends Component {
           this.state.classes.length > 0 &&
             <section className='bx--row'>
               <div className='bx--col-md-12 bx--col-lg-8'>
-                <img className='display' src={this.state.image} alt='Placeholder' />
+                <img src={this.state.image} alt={this.state.image} />
               </div>
               <div className='bx--col-md-12 bx--col-lg-4'>
-                <StructuredListWrapper className='result'>
+                <StructuredListWrapper>
                   <StructuredListBody>
                     {
                       this.state.classes
                         .sort((a, b) => b.score - a.score)
-                        .map(result => (
-                          <StructuredListRow key={result.class}>
-                            <StructuredListCell noWrap>{result.class}</StructuredListCell>
-                            <StructuredListCell>{result.score}</StructuredListCell>
+                        .map(c => (
+                          <StructuredListRow key={c.class}>
+                            <StructuredListCell noWrap>{c.class}</StructuredListCell>
+                            <StructuredListCell>{c.score}</StructuredListCell>
                           </StructuredListRow>
                         ))
                     }
@@ -91,10 +91,7 @@ class App extends Component {
         headers: new global.Headers({ Authorization: auth })
       })
       .then(response => response.json())
-      .then(data => {
-        const classes = data.images[0].classifiers[0].classes
-        this.setState({ classes })
-      })
+      .then(({ images }) => this.setState({ classes: images[0].classifiers[0].classes }))
   }
 }
 
