@@ -37,6 +37,8 @@ class App extends Component {
             <div className='bx--col-xs-6 bx--col-xl-3'>
               <Select id='model' labelText='Model' defaultValue='default'>
                 <SelectItem value='default' text='General' />
+                <SelectItem value='food' text='Food' />
+                <SelectItem value='explicit' text='Explicit' />
                 {
                   this.state.classifiers.map(c => (
                     <SelectItem key={c.classifier_id} value={c.classifier_id} text={c.name} />
