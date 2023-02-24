@@ -19,7 +19,7 @@
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.8"
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "carbon-components": "^9.61.1",
