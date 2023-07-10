@@ -24,7 +24,7 @@
   "devDependencies": {
     "carbon-components": "^9.61.1",
     "carbon-components-react": "^6.60.1",
-    "node-sass": "^7.0.3",
+    "node-sass": "^9.0.0",
     "standard": "^12.0.1"
   },
   "browserslist": [
