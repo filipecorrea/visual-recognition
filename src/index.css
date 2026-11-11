@@ -1,0 +1,32 @@
+@import '~carbon-components/css/carbon-components.css';
+
+.bx--grid {
+  margin-top: 4rem;
+}
+
+.bx--grid header {
+  margin-bottom: 4rem;
+}
+
+.bx--grid .bx--form .bx--form-item {
+  margin-bottom: 1.5rem;
+}
+
+.bx--grid .bx--form .bx--btn {
+  margin: 1.5rem 0 4rem;
+  float: right;
+}
+
+.bx--grid img {
+  width: 100%;
+  margin: 0 0 2rem;
+}
+
+.bx--grid .bx--structured-list {
+  min-width: 0;
+}
+
+.bx--grid .bx--structured-list .bx--structured-list-row .bx--structured-list-td:last-child {
+  padding-right: 0;
+  text-align: right;
+}

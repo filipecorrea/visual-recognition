@@ -24,7 +24,6 @@
   "devDependencies": {
     "carbon-components": "^9.61.1",
     "carbon-components-react": "^6.60.1",
-    "node-sass": "^9.0.0",
     "standard": "^17.1.2"
   },
   "browserslist": [
@@ -35,7 +34,10 @@
   ],
   "standard": {
     "env": [
-      "mocha"
+      "jest"
+    ],
+    "ignore": [
+      "build/"
     ]
   },
   "proxy": "https://gateway.watsonplatform.net/visual-recognition/api/v3/"
