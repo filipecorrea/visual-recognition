@@ -13,7 +13,7 @@ class App extends Component {
     this.state = { classifiers: [], image: '', model: '', classes: [] }
   }
 
-  componentWillMount () {
+  componentDidMount () {
     window
       .fetch('classifiers?version=2018-03-19', {
         headers: new global.Headers({ Authorization: auth })
